@@ -1,7 +1,7 @@
 {
-  "name": "sourcemapped-stacktrace-node",
-  "version": "2.1.8",
-  "homepage": "https://github.com/stereobooster/sourcemapped-stacktrace",
+  "name": "sourcemapped-stacktrace-test",
+  "version": "2.1.9",
+  "homepage": "https://github.com/marcoandre1/sourcemapped-stacktrace-node",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">= 8.6.0"
@@ -10,14 +10,18 @@
     "name": "James Salter",
     "email": "iteration@gmail.com"
   },
-  "contributors": ["stereobooster <stereobooster@gmail.com>"],
+  "contributors": [
+    "stereobooster <stereobooster@gmail.com>",
+    "marcoandre1"
+  ],
   "main": "src/indexNode.js",
-  "files": ["src"],
-  "description":
-    "A simple module for applying source maps to JS stack traces in the browser.",
+  "files": [
+    "src"
+  ],
+  "description": "A simple module for applying source maps to JS stack traces in the browser.",
   "dependencies": {
     "es6-promise": "^4.1.1",
-    "isomorphic-fetch": "^2.2.1",
+    "isomorphic-fetch": "^3.0.0",
     "source-map": "^0.6.1"
   },
   "devDependencies": {
@@ -32,8 +36,7 @@
     "url": "http://github.com/stereobooster/sourcemapped-stacktrace"
   },
   "scripts": {
-    "precommit":
-      "prettier --write *.{js,json,css} && prettier --write {tests,src}/*.{js,json,css}",
+    "precommit": "prettier --write *.{js,json,css} && prettier --write {tests,src}/*.{js,json,css}",
     "test": "jest",
     "typecheck": "tsc"
   }
