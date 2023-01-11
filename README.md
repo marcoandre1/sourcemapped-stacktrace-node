@@ -2,6 +2,10 @@
 
 ⚠️ This is a lazy fork of [sourcemapped-stacktrace-node](https://github.com/stereobooster/sourcemapped-stacktrace-node). It is just a version with updated dependencies. **Will try to keep dependencies updated, but no development in the near future.**
 
+> **NOTE**: might not work as expected because of dependency updates but tests seem to run smoothly. Create an issue on my repo if you have a specific case that is now not supported because of dependency updates.
+
+## sourcemapped-stacktrace-node
+
 ⚠️ This is a lazy fork of a [sourcemapped-stacktrace](https://github.com/novocaine/sourcemapped-stacktrace). To do all things right I need to do a lot of refactoring, for which I do not have time right now. So I did minimal change to be able to use it as npm package. [This](https://github.com/novocaine/sourcemapped-stacktrace/pull/31) is a PR with first steps of a refactoring. **Highly experimental. Undocumented.**
 
 ## TODO
