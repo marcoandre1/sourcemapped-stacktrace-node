@@ -1,6 +1,6 @@
 {
   "name": "sourcemapped-stacktrace-test",
-  "version": "2.1.10",
+  "version": "2.1.11",
   "homepage": "https://github.com/marcoandre1/sourcemapped-stacktrace-node",
   "license": "BSD-3-Clause",
   "engines": {
