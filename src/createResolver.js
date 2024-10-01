@@ -27,19 +27,21 @@ const createResolver = ({ uriFetcher, fsFetcher, store }) => {
       return (store[uri] = falseFetcher(uri));
     }
 
-    return store[uri] = new Promise((resolve) => {
-      uriFetcher(uri).then(response => {
-        if (response.status === 200) {
-          return resolve(response.text());
-        } else {
-          console.log(`${uri}: ${response}`);
+    return (store[uri] = new Promise(resolve => {
+      uriFetcher(uri)
+        .then(response => {
+          if (response.status === 200) {
+            return resolve(response.text());
+          } else {
+            console.log(`${uri}: ${response}`);
+            return resolve(false);
+          }
+        })
+        .catch(e => {
+          console.log(`${uri}: ${e}`);
           return resolve(false);
-        }
-      }).catch(e => {
-        console.log(`${uri}: ${e}`);
-        return resolve(false);
-      })
-    });
+        });
+    }));
   };
 };
 

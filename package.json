@@ -15,10 +15,9 @@
     "marcoandre1 <hello@modokemdev.com>"
   ],
   "main": "src/indexNode.js",
-  "files": [
-    "src"
-  ],
-  "description": "A simple module for applying source maps to JS stack traces in the browser.",
+  "files": ["src"],
+  "description":
+    "A simple module for applying source maps to JS stack traces in the browser.",
   "dependencies": {
     "es6-promise": "^4.1.1",
     "isomorphic-fetch": "^3.0.0",
@@ -36,7 +35,8 @@
     "url": "https://github.com/marcoandre1/sourcemapped-stacktrace-node"
   },
   "scripts": {
-    "precommit": "prettier --write *.{js,json,css} && prettier --write {tests,src}/*.{js,json,css}",
+    "precommit":
+      "prettier --write *.{js,json,css} && prettier --write {tests,src}/*.{js,json,css}",
     "test": "jest",
     "typecheck": "tsc"
   }

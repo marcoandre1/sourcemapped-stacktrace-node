@@ -164,7 +164,7 @@ test("works for new keyword", done => {
     isChromeOrEdge: true,
     resolver: testResolver
   }).then(result => {
-    console.log(result)
+    console.log(result);
     expect(result).toBe(newKeywordMapedTrace);
     done();
   });
